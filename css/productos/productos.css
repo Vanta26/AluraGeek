@@ -1,0 +1,20 @@
+.productos {
+    height: fit-content;
+    padding: 1rem;
+    width: 100%;
+}
+
+.productos__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.productos__arrow {
+    position: relative;
+    top: 2px;
+}
+
+
+

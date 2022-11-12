@@ -1,0 +1,151 @@
+.header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ===== L O G O ===== */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.header__logo {
+    height: 28px;
+}
+
+.logo-name {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+/* ===== N A V ===== */
+
+
+.nav {
+    position: relative;
+}
+
+.nav__input {
+    border-radius: 100px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: var(--primary-light-color);
+    width: 100px;
+}
+
+.nav__input:focus {
+    outline: none;
+}
+
+.nav__input::placeholder {
+    font-size: 1rem;
+    color: var(--primary-light-color);
+}
+
+.nav__icon-search {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    color: var(--primary-light-color);
+}
+
+.log-link {
+    padding: 0.5rem;
+}
+
+/* ===== N A V -- R E S P O N S I V E ===== */
+
+.nav-responsive {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.nav-responsive__input {
+    width: 200px;
+}
+
+.icon-search {
+    display: none;
+}
+
+.nav-responsive__button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    color: var(--secondary-color);
+}
+
+.button-hidden {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+    .header__logo {
+        height: 30px;
+    }
+    
+    .logo-name {
+        font-size: 1.5rem;
+    }
+
+    .nav__input {
+        font-size: 1.3rem;
+        width: 300px;
+    }
+
+    .nav__icon-search {
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        font-size: 1.5rem;
+        color: var(--primary-light-color);
+    }
+
+    .nav__input::placeholder {
+        font-size: 1.3rem;
+    }
+    
+    .nav-responsive {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .nav {
+        order: 3;
+    }
+
+    .log-link {
+        order: 2;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .icon-search {
+        display: inline-block;
+        font-size: 2rem;
+        color: var(--light-color);
+    }
+}

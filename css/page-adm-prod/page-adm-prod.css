@@ -1,0 +1,31 @@
+.prod-adm {
+    margin-bottom: 5rem;
+}
+
+.product-all {
+    font-size: 0.8rem;
+}
+
+.card-container {
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.card__icon-edit {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: white;
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+}
+.delete:hover {
+    color: rgb(241, 75, 33);
+}
+.edit:hover {
+    color: rgb(48, 226, 25);
+}

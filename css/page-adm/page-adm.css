@@ -1,0 +1,22 @@
+.administracion-page {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-adm-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 554px) {
+    .button-page-adm {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+}
